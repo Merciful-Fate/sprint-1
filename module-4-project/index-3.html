@@ -1,0 +1,159 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Starset</title>
+  <style>
+    header {
+      color: white;
+      text-align: center;
+      font-size: 100px;
+      border: 20px solid white;
+      font-family: fantasy;
+      background-color: black;
+      padding: 20px;
+      max-width: fit-content;
+      margin: 50px auto;
+    }
+    nav {
+      color: white;
+      text-align: center;
+      font-size: 50px;
+      font-family: fantasy;
+      border-radius: 10px solid white;
+    }
+    li {
+      display: inline;
+      padding: 100px;
+    }
+    h1 {
+      
+      color: white;
+      text-align: center;
+      border: 8px solid white;
+      background-color: black;
+      padding: 25px;
+      max-width: fit-content;
+      margin: 20px auto;
+      }
+      p {
+        color: white;
+        background-color: black;
+        border: 8px solid white;
+        text-align: center;
+        font-size: 25px;
+        padding: 20px;
+        max-width: fit-content;
+        margin: 50px auto;
+      }
+      aside {
+        color: white;
+        background-color: black;
+        border: 8px solid white;
+        text-align: center;
+        font-size: 25px;
+        padding: 20px;
+        max-width: fit-content;
+        margin: 50px auto;
+      }
+      form {
+        color: white;
+        background-color: black;
+        text-align: center;
+        font-size: 25px;
+        padding: 20px;
+        max-width: fit-content;
+        margin: 50px auto;
+      }
+    body {
+      background-image: url(https://www.publicdomainpictures.net/pictures/70000/velka/stars-in-the-night-sky.jpg);
+      }
+    footer {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Meet Starset</header>
+
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Bio</li>
+      <li>Contact Us</li>
+    </ul> 
+  </nav>
+
+  <section>
+
+    <h1 id="stitle">Who is Starset?</h1>
+    <p>
+      Starset was formed in 2013 by Downplay vocalist Dustin Bates, who is also the band's lead singer, songwriter, and keyboardist. Bates's interest in astronomy was first fueled when acquiring his master's in electrical engineering as he studied at Ohio University. He completed research for the US Air Force and also taught at the International Space University. Bates created the fictional backstory for the band that forms the thematic basis for their music and multimedia. In the backstory, Starset was formed as part of a public outreach initiative by The Starset Society. The Society's aims were to alert the public about the contents of "the Message" the society obtained from a mysterious signal from space. Starset treats their backstory and The Starset Society as real in interviews, with few exceptions.
+
+      The band released their debut album Transmissions on July 8, 2014. The release debuted at number 49 on the US Billboard 200 charts, making it one of the highest debut albums for a rock band in 2014, and as of 2016, had sold over 79,000 copies. Three singles were released in promotion of the album; "My Demons", "Carnivore", and "Halo." They also performed well in the charts, reaching fifth, sixteenth, and sixteenth respectively on the Billboard US Mainstream Rock charts. The band later released an accompanying novel, The Prox Transmissions, further detailing Bates's fictional back-history of the Starset Society story.
+    </p>
+
+  </section>
+  <aside>
+    <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Starset_Transmissions.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/en/1/18/Starset_Vessels.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Starset_-_Divisions.png">
+    <img src="https://upload.wikimedia.org/wikipedia/en/8/8d/Starset_-_Horizons.png"><br>
+    Starset is an American rock band from Columbus, Ohio, formed by Dustin Bates in 2013.
+  </aside>
+
+  
+
+  <form>
+    <p>Comments and Concerns:</p>
+    <label for="email">Email:</label>
+    <input type="email" name="email">
+    <br>
+    <br>
+    <textarea name="Comments" rows="10" cols="100">Please write any comments or concerns you may have and submit them using the button below. We will get back to you in 24-48 hours in most cases. However, in some cases it may take longer to respond to certain requests. Thank you for visiting our website! --- Starset</textarea>
+    <br>
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <footer>
+    *This website was created by David Dyer as a project for acedemic purposes. It is not endorsed by and/or affiliated with Starset.
+  </footer>
+
+  <script>
+    console.log("Starset is awesome!!!")
+  </script>
+</body>
+</html>
